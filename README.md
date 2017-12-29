@@ -28,3 +28,17 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+-----------------------------------------------------------------------------------------------
+1) npm i -g vue-cli (установка vue-cli глобально)
+
+2) vue init webpack (создаем каркас приложения )
+vue init webpack-simple (упрощенный проект)
+
+3) npm i (чтобы поставить зависимости в сгенеренном package.json)
+
+4) npm run dev (запускаем webpack dev server)
+
+5) npm install vue-resource --save-dev (модуль для HTTP запросов - реализация REST API)
+-----------------------------------------------------------------------------------------------
+

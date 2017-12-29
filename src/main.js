@@ -4,12 +4,13 @@ import Vue from 'vue';
 import App from './App';
 //import router from './router';
 import VueResource from 'vue-resource';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 Vue.use(VueResource);
 Vue.config.productionTip = false;
 
 //Vue.http.options.root = 'http://jsonplaceholder.typicode.com';
-//Vue.http.options.root = 'http://yii-study/api/';
+Vue.http.options.root = 'http://yii-study/api/';
 
 /* eslint-disable no-new */
 new Vue({
