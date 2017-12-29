@@ -5,6 +5,7 @@ import App from './App';
 //import router from './router';
 import VueResource from 'vue-resource';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/ionicons.min.css';
 
 Vue.use(VueResource);
 Vue.config.productionTip = false;

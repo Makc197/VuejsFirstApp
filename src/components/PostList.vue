@@ -1,6 +1,6 @@
 <template>
   <div class="posts panel panel-default">
-    <div class="panel-heading"><h1>Posts list</h1></div>
+    <div class="panel-heading"><h1>Products</h1></div>
     <table class="table">
         <tr>
           <th>ID</th><th>Title</th> 
@@ -40,7 +40,6 @@ export default {
                 this.posts = response.data
             }, 
             function(error) {
-
             }
         );
 

@@ -1,6 +1,6 @@
 <template>
   <div class="posts panel panel-default">
-    <div class="panel-heading"><h1>Posts list</h1></div>
+    <div class="panel-heading"><h1>Books</h1></div>
     <table class="table">
         <tr>
           <th>ID</th><th>Title</th> 
@@ -17,7 +17,7 @@ export default {
 
   data: function() {
     return {
-        endpoint: 'product',
+        endpoint: 'book',
         posts: []
     };
   },
@@ -28,7 +28,7 @@ export default {
 
             var options = {
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 }
             }
 
