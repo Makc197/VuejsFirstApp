@@ -11,7 +11,7 @@ Vue.use(VueResource);
 Vue.config.productionTip = false;
 
 //Vue.http.options.root = 'http://jsonplaceholder.typicode.com';
-Vue.http.options.root = 'http://yii-study/api/';
+Vue.http.options.root = 'http://yii-study/en/api/';
 
 /* eslint-disable no-new */
 new Vue({

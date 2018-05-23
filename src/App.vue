@@ -8,8 +8,8 @@
 
 	<aside v-show="show" transition="slide">
     <ul>
-  		<li @click="activeComponent = 'post-list'" class="list-item-link"><h4>Products</h4> </li> 
-      <li @click="activeComponent = 'post-list2'" class="list-item-link"><h4>Books</h4> </li>
+        <li @click="activeComponent = 'post-list'" class="list-item-link"><h4>Products</h4> </li> 
+        <li @click="activeComponent = 'post-list2'" class="list-item-link"><h4>Books</h4> </li>
     </ul>
 	</aside>
   <div class="row">

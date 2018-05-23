@@ -14,41 +14,38 @@
 
 <script>
 export default {
-
-  data: function() {
+  created: function() {
+     this.getAllPosts();
+  },
+  data: function(){
     return {
-        endpoint: 'book',
         posts: []
     };
   },
-
   methods:{
-
         getAllPosts: function() {
-
-            var options = {
-                headers: {
-                    'Content-Type': 'application/json',
-                }
+        const resource = this.$resource('book')
+        var options = {
+            params: {
+                _start: 10,
+                _limit: 5
+            },
+            headers: {
+                'Content-Type': 'application/json'
             }
+        };
 
-            this.$http.get(this.endpoint, options).then(function(response) {
-
-                //console.log(response.data)
+        resource.get().then(
+            function(response) {
                 this.posts = response.data
+            }, 
+            function(error) {
+            }
+        );
 
-            }, function(error) {
-                console.log(error)
-            })
-
-        }
-    },
-
-    created: function() {
-        this.getAllPosts()
     }
-   
- }
+  }
+}
 </script>
 
 <style>
